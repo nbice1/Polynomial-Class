@@ -7,9 +7,9 @@ This class includes five methods:
 
 1. coeff(self, i) returns the coefficient corresponding to the variable raised to the ith power. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0, coeff(self, 0) will return 2.0, coeff(self, 1) will return 0.0, and coeff(self, 2) will return 1.0.
 
-2. add(self, other) will add the instance to the polynomial other and return the result. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0 and other is 1.0z\*\*3 + 0.0z\*\*2 + 0.0z + 4.0, add(self, other) will return a new instance 1.0z\*\*3 + 1.0z\*\*2 + 0.0z + 6.0. This method can also be called via the addition symbol '+' between two instances. 
+2. add(self, other) will add the instance to the polynomial other and return the result. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0 and other is 1.0z\*\*3 + 0.0z\*\*2 + 0.0z + 4.0, add(self, other) will return a new instance 1.0z\*\*3 + 1.0z\*\*2 + 0.0z + 6.0. This method can also be called via the addition symbol '+' between two instances: e.g. if poly1 and poly2 are both instances, poly1 + poly2 will return the same result as poly1.add(poly2). 
 
-3. mul(self, other) will multiply the instance with the polynomial other and return the result. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0 and other is 1.0z\*\*3 + 0.0z\*\*2 + 0.0z + 4.0, mul(self, other) will return a new instance 1.0z\*\*5 + 0.0z\*\*4 + 2.0z\*\*3 + 4.0z\*\*2 + 0.0z + 8.0. This method can also be called via the multiplication symbol '\*' between two instances. 
+3. mul(self, other) will multiply the instance with the polynomial other and return the result. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0 and other is 1.0z\*\*3 + 0.0z\*\*2 + 0.0z + 4.0, mul(self, other) will return a new instance 1.0z\*\*5 + 0.0z\*\*4 + 2.0z\*\*3 + 4.0z\*\*2 + 0.0z + 8.0. This method can also be called via the multiplication symbol '\*' between two instances: e.g. if poly1 and poly2 are both instances, poly1 \* poly2 will return the same result as poly1.mul(poly2). 
 
 4. val(self, v) will evaluate the instance with the variable set equal to v and return the result. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0, val(self, 3) will return 11.0 and val(self, 2.75) will return 9.5625. This method can also be called via function application: e.g. if poly is an instance, poly(3) will return the same result as poly.val(3). 
 
