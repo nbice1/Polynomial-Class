@@ -20,7 +20,10 @@ class Polynomial:
     def __repr__(self):
         return str(self)
     def coeff(self, i):
-        return self.coeffs[-1 - i]
+        if 0 <= i < len(self.coeffs):
+            return self.coeffs[-1 - i]
+        else:
+            return 0.0
     def add(self, other):
         rev_poly = []
         rev_self_coeffs = self.coeffs[::-1]
