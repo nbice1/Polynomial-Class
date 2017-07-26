@@ -5,7 +5,7 @@ Instances of this class are polynomials of one variable initialized via a list o
 
 This class includes five methods: 
 
-1. coeff(self, i) returns the coefficient corresponding to the variable raised to the ith power. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0, coeff(0) will return 2.0, coeff(1) will return 0.0, and coeff(2) will return 1.0.
+1. coeff(self, i) returns the coefficient corresponding to the variable raised to the ith power. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0, coeff(self, 0) will return 2.0, coeff(self, 1) will return 0.0, and coeff(self, 2) will return 1.0.
 
 2. add(self, other) will add the instance to the polynomial other and return the result. For example, if the instance is 1.0z\*\*2 + 0.0z + 2.0 and other is 1.0z\*\*3 + 0.0z\*\*2 + 0.0z + 4.0, add(self, other) will return a new instance 1.0z\*\*3 + 1.0z\*\*2 + 0.0z + 6.0. This method can also be called via the addition symbol '+' between two instances. 
 
