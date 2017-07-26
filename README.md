@@ -1,7 +1,7 @@
 # Polynomial-Class
 Python class Polynomial for working with polynomials.
 
-Instances of this class are polynomials of one variable initialized via a list of coefficients. Instances are represented in the form a(0)z\*\*n + ... + a(n-1)z + a(n), where [a(0),...,a(n)] is the initial list of coefficients and any a(i) may be equal to 0.0. Note that any integers in the initial list of coefficients will be converted into floating-point numbers. The converted list is stored in the attribute self.coeffs. For example, Polynomial([1,0,2]) will create an instance represented as 1.0z\*\*2 + 0.0z + 2.0 with Polynomial([1,0,2]).coeffs equal to [1.0, 0.0, 2.0]. 
+Instances of this class are polynomials of one variable initialized via a list of coefficients. Instances are represented in the form a(0)z\*\*n + ... + a(n-1)z + a(n), where [a(0),...,a(n)] is the initial list of coefficients and any a(i) may be equal to 0.0. Note that any integers in the initial list of coefficients will be converted into floating-point numbers. The converted list is stored in the instance variable self.coeffs. For example, Polynomial([1,0,2]) will create an instance represented as 1.0z\*\*2 + 0.0z + 2.0 with Polynomial([1,0,2]).coeffs equal to [1.0, 0.0, 2.0]. 
 
 This class includes five methods: 
 
