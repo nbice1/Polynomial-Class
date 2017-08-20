@@ -138,8 +138,9 @@ class Polynomial:
             #if the polynomial has order two, uses the quadratic formula to find its pair of roots (possibly the same), which
             #may be complex numbers; returns a list containing the roots
             elif b**2 < 4*a*c:
-                root1 = (-b + complex((b**2 - 4*a*c),0)**0.5) / (2*a)
-                root2 = (-b - complex((b**2 - 4*a*c),0)**0.5) / (2*a)
+                import cmath
+                root1 = (-b + cmath.sqrt(b**2 - 4*a*c)) / (2*a)
+                root2 = (-b - cmath.sqrt(b**2 - 4*a*c)) / (2*a)
             else:
                 root1 = (-b + (b**2 - 4*a*c)**0.5) / (2*a)
                 root2 = (-b - (b**2 - 4*a*c)**0.5) / (2*a)
